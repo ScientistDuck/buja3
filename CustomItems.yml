@@ -1,0 +1,348 @@
+# The list of escape coins.
+escape_coins:
+  - id: 3
+    name: 'Moneda escapista'
+    description: 'Tíralo en la pocket y escapas.'
+    weight: 0.100000001
+    model_type: Coin
+    spawn_properties:
+      limit: 3
+      dynamic_spawn_points:
+        - location: InsideLocker
+          locker_zone: None
+          chance: 99
+          offset:
+            x: 76
+            y: 569
+            z: -999
+        - location: InsideLocker
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: InsideLocker
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of grenade launchers.
+grenade_launchers:
+  - id: 1
+    damage: 0
+    name: 'Lanza granadas'
+    description: 'Dispara granadas, ¿qué esperabas?.'
+    weight: 3.49000001
+    model_type: ParticleDisruptor
+    clip_size: 1
+    attachments_code: 5252
+    ignore_custom_grenade: true
+    spawn_properties:
+      limit: 1
+      dynamic_spawn_points:
+        - location: Inside079Secondary
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    friendly_fire: false
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of anti-memetic pills.
+anti_memetic_pills:
+  - id: 2
+    name: 'Anti-mimético'
+    description: 'Olvidarás la cara del 096 y te curarás de todo mal.'
+    weight: 0.200000003
+    model_type: SCP500
+    spawn_properties:
+      limit: 3
+      dynamic_spawn_points:
+        - location: Inside096
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: InsideLczWc
+          locker_zone: None
+          chance: 80
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: Inside330
+          locker_zone: None
+          chance: 40
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: InsideLczCafe
+          locker_zone: None
+          chance: 50
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: InsideGr18
+          locker_zone: None
+          chance: 30
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of lethal injections.
+lethal_injections:
+  - id: 4
+    name: 'Inyección letal'
+    description: 'Morirás pero calmarás al 096 si eres su objetivo.'
+    weight: 0.300000012
+    model_type: Adrenaline
+    spawn_properties:
+      limit: 3
+      dynamic_spawn_points:
+        - location: Inside096
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: Inside049Armory
+          locker_zone: None
+          chance: 80
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: InsideNukeArmory
+          locker_zone: None
+          chance: 50
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of mimic hats.
+mimic_hats:
+  - id: 7
+    name: 'Sombrero del disfraz'
+    description: 'Vuélvete un SCP aleatorio por un corto periodo de tiempo.'
+    weight: 0.100000001
+    model_type: SCP268
+    spawn_properties:
+      limit: 1
+      dynamic_spawn_points:
+        - location: InsideNukeArmory
+          locker_zone: None
+          chance: 60
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    duration: 15
+    cooldown: 45
+    appearance_change: 'Tu apariencia cambió a la de {0}'
+    appearance_restore: 'Tu apariencia ha vuelto a la normalidad.'
+    hint_duration: 5
+    is_disabled: false
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of sniper rifles.
+sniper_rifles:
+  - damage: 300
+    id: 5
+    name: 'Rifle de francotirador'
+    description: 'Un barret en su totalidad.'
+    weight: 6
+    model_type: GunE11SR
+    clip_size: 1
+    attachments_code: 19146000
+    spawn_properties:
+      limit: 2
+      dynamic_spawn_points:
+        - location: InsideHid
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: InsideHczArmory
+          locker_zone: None
+          chance: 40
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    damage_multiplier: 1.0999999
+    damage_multiplier_to_scps: 2.19999981
+    friendly_fire: false
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of tranquilizer guns.
+tranquilizer_guns:
+  - damage: 5
+    id: 6
+    name: 'Pistola tranquilizadora'
+    description: 'Duerme a tus oponentes.'
+    weight: 3
+    model_type: GunCOM18
+    clip_size: 1
+    attachments_code: 1170
+    spawn_properties:
+      limit: 2
+      dynamic_spawn_points:
+        - location: InsideLczArmory
+          locker_zone: None
+          chance: 100
+          offset:
+            x: 0
+            y: 0
+            z: 0
+        - location: Inside049Armory
+          locker_zone: None
+          chance: 40
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    scp_resist_chance: 70
+    duration: 3
+    resistance_modifier: 1.10000002
+    resistance_falloff_delay: 60
+    friendly_fire: false
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of anomalous armors.
+anomalous_armors:
+  - id: 9
+    name: 'SCP-714'
+    description: 'Te protegerá a cambio de tu vigor.'
+    weight: 2
+    model_type: ArmorCombat
+    spawn_properties:
+      limit: 1
+      dynamic_spawn_points:
+        - location: InsideLczArmory
+          locker_zone: None
+          chance: 22
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    stamina_use_multiplier: 0.5
+    stamina_regen_multiplier: 0.300000012
+    dont_remove_excess_on_drop: false
+    sprint_disable: false
+    scale:
+      x: 1
+      y: 1
+      z: 1
+
+# The list of zabralo armors.
+zabralo_armors:
+  - id: 8
+    name: 'Berserker'
+    description: 'Te volverás muy resistente.'
+    weight: 20
+    model_type: ArmorHeavy
+    spawn_properties:
+      limit: 1
+      dynamic_spawn_points:
+        - location: Inside079Secondary
+          locker_zone: None
+          chance: 70
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    helmet_efficacy: 100
+    vest_efficacy: 95
+    scale:
+      x: 1.3
+      y: 1.3
+      z: 1.3
+    stamina_use_multiplier: 5
+    stamina_regen_multiplier: 2.00200000009
+    damage_reduction: 120
+    dont_remove_excess_on_drop: false
+    sprint_disable: false
+
+# the list of ghost hat
+ghost_hat:
+  - id: 11
+    name: 'Sombrero fantasma'
+    description: 'Te volverás un fantasma por poco tiempo.'
+    weight: 2.100000001
+    model_type: SCP268
+    spawn_properties:
+      limit: 1
+      dynamic_spawn_points:
+        - location: InsideHID
+          locker_zone: None
+          chance: 90
+          offset:
+            x: 0
+            y: 0
+            z: 0
+      static_spawn_points: []
+      role_spawn_points: []
+    duration: 15
+    cooldown: 120
+    clear_effects: 
+      - Invisibility
+    effects:
+      - Effect: Ghostly
+        Duration: 15
